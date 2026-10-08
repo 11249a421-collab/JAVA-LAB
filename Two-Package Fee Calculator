@@ -1,0 +1,39 @@
+public class Student {
+    public String name;
+    public String course;
+
+    public Student(String n, String c) {
+        name = n;
+        course = c;
+    }
+
+    public static void main(String[] args) {
+        Student[] s = {
+            new Student("Meena", "BE"),
+            new Student("Ravi", "ME"),
+            new Student("Anu", "BSc")
+        };
+
+        double total = 0;
+
+        System.out.printf("%-8s %-6s %10s%n", "NAME", "COURSE", "FEE");
+        System.out.println("---------------------------");
+
+        for (Student x : s) {
+            double f = FeeRule.fee(x.course);
+            System.out.printf("%-8s %-6s %10.2f%n", x.name, x.course, f);
+            total = total + f;
+        }
+
+        System.out.println("---------------------------");
+        System.out.printf("Total fee = %.2f%n", total);
+    }
+}
+
+class FeeRule {
+    public static double fee(String course) {
+        if (course.equals("BE")) return 75000;
+        if (course.equals("ME")) return 60000;
+        return 40000;
+    }
+}
