@@ -1,7 +1,7 @@
 PS C:\Users\Administrator\Documents\11249a268 JAVA> java -cp ".;mysql-connector-j-26.7.0.jar"  JDBCDemo                                                            
 Connected: MySQL                                                                                                                                                   
-104 | PANDU  | 9.1
-104 | PANDU  | 9.1
-104 | PANDU  | 9.1
-268 | DHANUSH | 8.6
+104 | pandu  | 9.1
+104 | pandu  | 9.1
+104 | pandu  | 9.1
+268 | dhanush | 8.6
 1 row(s) inserted
